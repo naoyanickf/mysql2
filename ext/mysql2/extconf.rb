@@ -56,6 +56,7 @@ dirs = ENV.fetch('PATH').split(File::PATH_SEPARATOR) + %w[
 
 # For those without HOMEBREW_ROOT in PATH
 dirs << "#{ENV['HOMEBREW_ROOT']}/bin" if ENV['HOMEBREW_ROOT']
+dirs << "/opt/homebrew/bin"
 
 GLOB = "{#{dirs.join(',')}}/{mysql_config,mysql_config5,mariadb_config}".freeze
 
