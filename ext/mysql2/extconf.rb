@@ -34,10 +34,14 @@ have_func('rb_wait_for_single_fd')
 # borrowed from mysqlplus
 # http://github.com/oldmoe/mysqlplus/blob/master/ext/extconf.rb
 dirs = ENV.fetch('PATH').split(File::PATH_SEPARATOR) + %w[
-  /opt
+  /opt  
   /opt/local
   /opt/local/mysql
   /opt/local/lib/mysql5*
+  /opt/homebrew
+  /opt/homebrew/bin
+  /opt/homebrew/bin/mysql
+  /opt/homebrew/bin/mysql5*
   /usr
   /usr/mysql
   /usr/local
